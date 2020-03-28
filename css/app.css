@@ -183,7 +183,7 @@ header h2 a {
   z-index: 1;
   top: 150%;
   left: 0%;
-  margin-left: -250px;
+  margin-left: -220px;
 }
 
 .tooltip:hover .tooltiptext {
