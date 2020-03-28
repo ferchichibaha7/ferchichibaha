@@ -1,0 +1,193 @@
+﻿:root {
+  --secondary-color: #FFEB3B;
+  --font-color: #333333;
+  --bg-color: #fafafa;
+  --link: #000000;
+  --toggle: #FEE133;
+}
+
+[data-theme=dark] {
+  --secondary-color: #FFEB3B;
+  --font-color: #d6d6d6;
+  --bg-color: #1a1a1a;
+  --link: #ffffff;
+  --toggle: #d6d6d6;
+}
+
+* {
+  font-family: Jost !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-size: 16px;
+  color: var(--font-color) !important;
+  background-color: var(--bg-color) !important;
+  background-image: url("../img/pattern-bg.png");
+}
+
+section {
+  height: 100vh;
+}
+
+@media (max-width: 575px) {
+  html {
+    font-size: 75%;
+  }
+}
+header {
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  font-size: 2rem;
+}
+header h2 a {
+  font-size: 1.5rem;
+}
+
+.section-1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-1 .info {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.section-1 .info p {
+  margin-top: 20px;
+}
+.section-1 .profil {
+  border-radius: 50%;
+  width: 11rem;
+  border: 2px solid var(--bg-color, #fafafa);
+  box-shadow: 0 15.619px 31.2381px rgba(0, 0, 0, 0.15);
+  margin-bottom: 45px;
+}
+
+.social-section {
+  margin-top: 35px;
+}
+.social-section li {
+  display: inline-block;
+  margin-left: 5px;
+}
+.social-section li a {
+  vertical-align: middle !important;
+}
+
+.scroll-bottom {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  background-image: url("../img/button-background-orange.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75px;
+  width: 91px;
+  transform: translateX(-50%);
+  cursor: pointer;
+  bottom: 20px;
+}
+.scroll-bottom:focus {
+  outline: none !important;
+}
+.scroll-bottom svg {
+  display: none;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.411);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  text-decoration: none;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 0%;
+  margin-left: -250px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=app.css.map */
